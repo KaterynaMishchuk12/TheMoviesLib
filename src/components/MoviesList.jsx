@@ -4,7 +4,7 @@ import css from "./MovieList.module.css";
 export const MoviesList = ({ movies }) => {
   return (
     <ul className={css.list}>
-      {/* {console.log(movies)} */}
+      {console.log(movies)}
       {movies.map((movie) => (
         <li key={movie.id} className={css.item}>
           <Link to={`/movies/${movie.id}`}>

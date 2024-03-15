@@ -13,10 +13,17 @@
   font-size: 40px;
   margin-bottom: 20px;
 }
+.ratingBox {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  align-items: center;
+}
 .rating {
   font-size: 20px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
+
 .info h3 {
   font-size: 24px;
   margin-bottom: 20px;

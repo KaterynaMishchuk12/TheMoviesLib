@@ -1,3 +1,4 @@
+import RatingStars from "../RatingStars/ratingStars";
 import css from "./MovieCard.module.css";
 
 export const MovieCard = ({ movie }) => {
@@ -18,7 +19,11 @@ export const MovieCard = ({ movie }) => {
             {movie.title} (
             {movie.release_date && movie.release_date.slice(0, 4)})
           </h2>
-          <p className={css.rating}>Rating: {movie.vote_average}</p>
+          <div className={css.ratingBox}>
+            <p className={css.rating}>Rating: {movie.vote_average}</p>
+            <RatingStars value={movie.vote_average} />
+          </div>
+
           <h3>Overview</h3>
 
           <p className={css.overview}>{movie.overview}</p>
