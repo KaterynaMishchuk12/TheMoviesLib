@@ -1,4 +1,35 @@
-.nav {
+/* .nav {
   display: flex;
   flex-direction: column;
+} */
+.container {
+  padding: 0 40px;
 }
+.movieInfo {
+  display: flex;
+  gap: 20px;
+}
+.info h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.rating {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.info h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.overview {
+  font-size: 20px;
+}
+.addInfo {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+/* @media screen and (min-widt: 1158px) {
+  .movieInfo {
+    width: 400px;
+  }
+} */
