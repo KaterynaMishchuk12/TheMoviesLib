@@ -22,8 +22,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
-      <h1 style={{ padding: "80px" }}>Trending today</h1>
+    <div style={{ textAlign: "center" }}>
+      <h1 style={{ padding: "90px", margin: "auto" }}>Trending today</h1>
       {error && <ErrorMessage />}
       {movies.length > 0 && <MoviesList movies={movies} />}
     </div>

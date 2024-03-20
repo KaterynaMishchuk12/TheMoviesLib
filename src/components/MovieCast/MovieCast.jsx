@@ -33,10 +33,11 @@ export default function MovieCast() {
     <div>
       {loading && <Loader />}
       {error && <ErrorMessage />}
-      <ul>
+      <ul className={css.list}>
         {cast.map((item) => (
           <li key={item.id} className={css.castItem}>
             <img
+              className={css.image}
               width="80"
               height="120"
               src={`https://image.tmdb.org/t/p/w500${item.profile_path}`}

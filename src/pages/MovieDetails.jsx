@@ -38,7 +38,15 @@ export default function MovieDetails() {
       {loading && <Loader />}
       {error && <ErrorMessage />}
       <MovieCard movie={movie} />
-      <div style={{ display: "flex", gap: "10px", paddingLeft: "40px" }}>
+      <div
+        style={{
+          display: "flex",
+          gap: "50px",
+          paddingLeft: "40px",
+          paddingBottom: "20px",
+          fontSize: "20px",
+        }}
+      >
         <Link to={`cast`}>Cast</Link>
         <Link to={`reviews`}>Reviews</Link>
       </div>

@@ -32,10 +32,10 @@ export default function MovieReviews() {
     <div>
       {loading && <Loader />}
       {error && <ErrorMessage />}
-      <ul>
+      <ul style={{ paddingLeft: "40px" }}>
         {reviews.length > 0 ? (
           reviews.map((review) => (
-            <li key={review.id}>
+            <li key={review.id} style={{ paddingBottom: "20px" }}>
               <p>
                 <strong>Author:</strong> {review.author}
               </p>

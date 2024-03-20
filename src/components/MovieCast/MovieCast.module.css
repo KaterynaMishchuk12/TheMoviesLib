@@ -1,9 +1,27 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 20px 10px 40px;
+  gap: 20px;
+}
 .castItem {
   display: flex;
   gap: 6px;
-  margin-bottom: 10px;
+  flex-basis: calc((100% - 10px * 2) / 3);
   justify-content: flex-start;
 }
 .actorInfo {
   padding: 6px;
+}
+
+.image {
+  border-radius: 2px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+@media screen and (min-width: 1158px) {
+  .castItem {
+    flex-basis: calc((100% - 10px * 4) / 5);
+  }
 }
