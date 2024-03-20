@@ -1,4 +1,4 @@
-import RatingStars from "../RatingStars/ratingStars";
+import RatingStars from "../RatingStars/RatingStars";
 import css from "./MovieCard.module.css";
 
 export const MovieCard = ({ movie }) => {
